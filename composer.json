@@ -1,0 +1,14 @@
+{
+    "name": "miri92/mycms",
+    "description": "my first CMS package",
+    "type": "laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Miri Zulfugar",
+            "email": "miri.zulfugar@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
