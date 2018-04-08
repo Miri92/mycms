@@ -15,6 +15,8 @@ class MyCMSServiceProvider extends ServiceProvider
     {
         //
         require __DIR__ . '/routes/routes.php';
+
+        $this->loadViewsFrom(__DIR__.'/./../resources/views', 'mycms');
     }
 
     /**

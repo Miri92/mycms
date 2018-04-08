@@ -7,13 +7,15 @@
  */
 
 namespace Miri92\Mycms\Http\Controllers;
+use App\Http\Controllers\Controller;
 
-
-class PostController
+class PostController extends Controller
 {
 
     public function index(){
-        return 'index';
+        //return 'index';
+
+        return view('mycms::post.index');
     }
 
 }
