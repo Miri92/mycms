@@ -27,5 +27,22 @@ class MyCMSServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        $this->registerPublishables();
+    }
+
+    public function registerPublishables()
+    {
+        $basePath = dirname(__DIR__);
+
+        $arrPublishable = [
+          'public' => [
+              "$basePath/publishable/public" => public_path('/'),
+          ]
+        ];
+
+        foreach ($arrPublishable as $group => $paths) {
+            $this->publishes($paths, $group);
+        }
+
     }
 }
