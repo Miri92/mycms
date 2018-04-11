@@ -1,1 +1,5 @@
-<h2>index</h2>
+@extends('mycms::master')
+
+@section('content')
+<h2>dashboard</h2>
+@endsection
