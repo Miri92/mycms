@@ -35,9 +35,13 @@ class MyCMSServiceProvider extends ServiceProvider
         $basePath = dirname(__DIR__);
 
         $arrPublishable = [
-          'public' => [
-              "$basePath/publishable/public" => public_path('/'),
-          ]
+            'public' => [
+                "$basePath/publishable/public" => public_path('/'),
+            ],
+            'config' => [
+                "$basePath/publishable/config/mycms.php" => config_path('mycms.php'),
+            ]
+
         ];
 
         foreach ($arrPublishable as $group => $paths) {
