@@ -40,6 +40,12 @@ class MyCMSServiceProvider extends ServiceProvider
             ],
             'config' => [
                 "$basePath/publishable/config/mycms.php" => config_path('mycms.php'),
+            ],
+            'migration' => [
+                "$basePath/publishable/database/migrations" => database_path('migrations'),
+            ],
+            'seeds' => [
+                "$basePath/publishable/database/seeds" => database_path('seeds'),
             ]
 
         ];
