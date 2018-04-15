@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\User;
-use App\UserMeta;
+use Miri92\Mycms\Models\User;
+use Miri92\Mycms\Models\UserMeta;
 
 class MyUsersTableSeeder extends Seeder
 {
