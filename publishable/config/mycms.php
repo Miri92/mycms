@@ -3,42 +3,37 @@ return [
     'crud' => [
         'posts' => [
             'fields' => [
-                [
-                    'name'=>'title',
-                    'type'=> 'text'
+                'title' => [
+                    'type' => 'text',
+                    'validation' => [
+                        'rule' => 'required'
+                    ]
                 ],
-                [
-                    'name'=>'body',
-                    'type'=> 'rich_editor'
+                'body' => [
+                    'type' => 'rich_editor'
                 ],
-                [
-                    'name'=>'featured_image',
-                    'type'=> 'featured_image'
-                ],
-
+                'featured_image' => [
+                    'type' => 'image_from_filemanager'
+                ]
             ],
             'options' => [
                 'type' => 'plural'
-            ],
-            'validations' => [
-                'title' => 'required'
             ]
         ],
         'products' => [
             'fields' => [
-                [
-                    'name'=>'title',
-                    'type'=> 'text'
+                'title' => [
+                    'type' => 'text',
+                    'validation' => [
+                        'rule' => 'required'
+                    ]
                 ],
-                [
-                    'name'=>'body',
-                    'type'=> 'rich_editor'
+                'body' => [
+                    'type' => 'rich_editor'
                 ],
-                [
-                    'name'=>'featured_image',
-                    'type'=> 'featured_image'
-                ],
-
+                'featured_image' => [
+                    'type' => 'image_from_filemanager'
+                ]
             ],
             'options' => [
                 'type' => 'plural'
