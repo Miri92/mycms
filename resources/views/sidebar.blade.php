@@ -12,119 +12,33 @@
             </a>
         </li>
 
-        {{--slider--}}
+        {{--posts--}}
         <li class="item-red">
             <a href="#" class="dropdown-toggle">
                 <i class="icon-desktop"></i>
-                <span class="menu-text"> Manşet </span>
+                <span class="menu-text"> Posts </span>
 
                 <b class="arrow icon-angle-down"></b>
             </a>
 
             <ul class="submenu">
                 <li>
-                    <a href="{{ url('myadmin/slider/create') }}">
+                    <a href="{{ url('myadmin/posts/create') }}">
                         <i class="icon-double-angle-right"></i>
                         <span class="menu-text"> Yeni </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="{{ url('myadmin/slider') }}">
+                    <a href="{{ url('myadmin/posts') }}">
                         <i class="icon-double-angle-right"></i>
                         <span class="menu-text"> Hamısı </span>
                     </a>
                 </li>
             </ul>
         </li>
-        {{--slider video--}}
+        {{--posts video--}}
 
-        {{--gallery--}}
-        <li class="item-green">
-            <a href="#" class="dropdown-toggle">
-                <i class="icon-picture"></i>
-                <span class="menu-text"> Qalereya </span>
-
-                <b class="arrow icon-angle-down"></b>
-            </a>
-
-            <ul class="submenu">
-                <li>
-                    <a href="{{ url('myadmin/galleries/create') }}">
-                        <i class="icon-double-angle-right"></i>
-                        <span class="menu-text"> Yeni </span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="{{ url('myadmin/galleries') }}">
-                        <i class="icon-double-angle-right"></i>
-                        <span class="menu-text"> Hamısı </span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        {{--gallery end--}}
-
-        {{--custom pages--}}
-        <li class="item-orange">
-            <a href="{{ url('myadmin/about-us') }}" class="dropdown-toggle">
-                <i class="icon-info"></i>
-                <span class="menu-text"> Haqqımızda </span>
-            </a>
-        </li>
-        <li class="item-orange">
-            <a href="{{ url('myadmin/property_detail') }}" class="dropdown-toggle">
-                <i class="icon-info"></i>
-                <span class="menu-text"> Ətraflı Məlumat </span>
-            </a>
-        </li>
-        <li class="item-red2">
-            <a href="{{ url('myadmin/map') }}" class="dropdown-toggle">
-                <i class="icon-map-marker"></i>
-                <span class="menu-text"> Xəritə </span>
-            </a>
-        </li>
-        <li class="item-green2">
-            <a href="{{ url('myadmin/contact_us') }}" class="dropdown-toggle">
-                <i class="icon-envelope"></i>
-                <span class="menu-text"> Bizimlə Əlaqə </span>
-            </a>
-        </li>
-        <li class="item-blue2">
-            <a href="{{ url('myadmin/our_agent') }}" class="dropdown-toggle">
-                <i class="icon-user"></i>
-                <span class="menu-text"> Satış Nümayəndəmiz </span>
-            </a>
-        </li>
-        {{--end custom pages--}}
-
-        {{--TESTI MONIALS--}}
-        <li class="item-brown">
-            <a href="#" class="dropdown-toggle">
-                <i class="icon-comment"></i>
-                <span class="menu-text"> Rəylər</span>
-
-                <b class="arrow icon-angle-down"></b>
-            </a>
-
-            <ul class="submenu">
-                <li>
-                    <a href="{{ url('myadmin/testimonials/create') }}">
-                        <i class="icon-double-angle-right"></i>
-                        <span class="menu-text"> Yeni </span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="{{ url('myadmin/testimonials') }}">
-                        <i class="icon-double-angle-right"></i>
-                        <span class="menu-text"> Bütün Rəylər</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        {{--end TESTI MONIALS--}}
 
 
         {{--category--}}
@@ -135,6 +49,15 @@
             {{--</a>--}}
         {{--</li>--}}
         {{--end category--}}
+
+        {{--menus--}}
+        <li class="item-purple">
+        <a href="{{ url('myadmin/menus') }}">
+        <i class="icon-align-justify"></i>
+        <span class="menu-text"> Menus </span>
+        </a>
+        </li>
+        {{--end menus--}}
 
 
         {{--Users--}}
